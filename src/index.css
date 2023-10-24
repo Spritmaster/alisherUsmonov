@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Cabin:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.hero-name{
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.grid_box-shadow{
+  border-radius: 30px;
+  box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.05);
+}
+
+@layer{
+  .align-elements{
+    @apply mx-auto max-w-[1600px] pl-[20px] sm:pl-[60px] sm:pr-5  xl:pl-[160px] xl:pr-[110px]
+  }
+  .flex_info-wrapper{
+    @apply hidden sm:flex lg:hidden flex-col gap-[30px] max-w-[800px] px-10 mx-auto
+  }
+  .card-title{
+    @apply text-[20px] font-extrabold capitalize leading-[150%] text-[#000] mt-[23px] mb-[10px] hover:text-[#FFC017] cursor-pointer
+  }
+
+  .card-time{
+    @apply w-[110px] py-3  px-[10px] bg-[#F6F7F8] rounded-[8px]
+  }
+  .burger-box{
+    @apply  px-5 py-[14px] bg-[#f6f7f8] text-[24px] font-semibold capitalize text-[#000] rounded-[20px] hover:bg-[#ffc017] flex gap-3 justify-between
+     
+  }
+  .social_media-box{
+    @apply w-[202px] text-[18px] font-[500] flex justify-center gap-[10px] p-5 bg-[#f6f7f8] rounded-xl hover:bg-[#ffc017]
+  }
+}
+
+
+
+
